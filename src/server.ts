@@ -1,4 +1,5 @@
 import express, { NextFunction, Request, Response } from 'express'
+import cors from 'cors'
 import 'express-async-errors'
 import 'reflect-metadata'
 import { router } from './routes'
@@ -6,6 +7,8 @@ import { router } from './routes'
 import './database'
 
 const app = express()
+
+app.use(cors())
 
 app.use(express.json())
 
@@ -22,4 +25,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     .json({ status: 'error', message: 'Internal server error' })
 })
 
-app.listen(3000, () => console.log('Server running on port 3000'))
+app.listen(3333, () => console.log('Server running on port 3333'))
