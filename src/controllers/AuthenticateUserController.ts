@@ -7,9 +7,12 @@ class AuthenticateUserController {
 
     const authenticateUserService = new AuthenticateUserService()
 
-    const token = await authenticateUserService.execute({ email, password })
+    const { token, user } = await authenticateUserService.execute({
+      email,
+      password,
+    })
 
-    return res.json(token)
+    return res.json({ token, user })
   }
 }
 

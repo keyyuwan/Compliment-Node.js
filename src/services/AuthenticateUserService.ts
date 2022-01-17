@@ -37,7 +37,7 @@ class AuthenticateUserService {
       }
     )
 
-    return token
+    return { token, user }
   }
 }
 
