@@ -1,11 +1,9 @@
 # Compliment - Node.js
 
-This project was developed in the NLW Together event from Rocketseat.
+This part of the project made with Node, serves as an API REST and was developed in the NLW Together event from Rocketseat in the Node.js lessons.
 <br />
 
 # Project
-
-This part of the project made with Node, serves as an API REST.
 
 The idea of the app is to compliment users. You can send compliments to any user, view your received and sent compliments, view the list of users and the list of tags used to categorize the compliments.
 
